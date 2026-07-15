@@ -1,52 +1,57 @@
 # Sysinfo
 
-Проект представляет собой небольшую системную утилиту, написанную на языке Python.
+`Sysinfo` is a small system information utility written in Python.
 
-Утилита `sysinfo` предназначена для быстрого получения информации о локальном компьютере или сервере.
+It is designed to quickly collect basic information about a local computer or server.
 
-## Возможности
+## Features
 
-Утилита позволяет получить следующую информацию:
+The utility can display the following information:
 
-1. **Операционная система**
+1. **Operating System**
 
-   Примеры:
-   - Linux
-   - Darwin (macOS)
+   Examples:
 
-2. **Имя хоста**
+   * Linux
+   * Darwin (macOS)
 
-   Пример:
-   - MacBook-Air.local
+2. **Hostname**
 
-3. **Версия ядра операционной системы**
+   Example:
 
-4. **Архитектура системы**
+   * MacBook-Air.local
 
-   Пример:
-   - 64bit
+3. **Kernel Version**
 
-5. **Версия Python**
+4. **System Architecture**
 
-6. **IP-адрес устройства**
+   Example:
 
-7. **Информация о процессоре (CPU)**
+   * 64bit
 
-   Пример:
-   - ARM
+5. **Python Version**
 
-8. **Оперативная память (RAM)**
+6. **IP Address**
 
-   Отображается:
-   - общий объём памяти;
-   - доступная память;
-   - используемая память;
-   - свободная память;
-   - процент загрузки.
+7. **CPU Information**
+
+   Example:
+
+   * ARM
+
+8. **Memory (RAM)**
+
+   Displays:
+
+   * Total memory
+   * Available memory
+   * Used memory
+   * Free memory
+   * Memory usage percentage
 
 ---
 
-## Пример работы
+## Example Output
 
 ```text
 =============== System ===============
@@ -62,7 +67,7 @@ Version        : 3.11.7
 IP             : 192.168.1.109
 
 =============== CPU ===============
-CPU            : arm
+CPU            : ARM
 
 =============== RAM ===============
 Total          : 8.00 GB
@@ -71,54 +76,84 @@ Used           : 2.92 GB
 Free           : 0.07 GB
 Percent        : 79.9%
 ```
-## Установка
-Клонировать репозиторий:  
+
+---
+
+## Installation
+
+Clone the repository:
+
 ```bash
 git clone <repository-url>
 ```
-Перейти в директорию проекта:  
+
+Navigate to the project directory:
+
 ```bash
 cd sysinfo
 ```
-Создать виртуальное окружение:  
+
+Create a virtual environment:
+
 ```bash
 python -m venv .venv
 ```
-Активировать виртуальное окружение:
-Linux / macOS  
+
+Activate the virtual environment.
+
+### Linux / macOS
+
 ```bash
 source .venv/bin/activate
 ```
-Windows  
+
+### Windows
+
 ```bash
 .venv\Scripts\activate
 ```
-Установить зависимости:  
+
+Install the project dependencies:
+
 ```bash
 pip install -e .
 ```
-### Требования  
-Версия Python: >= 3.11
 
-Структура проекта:
-```bash
-sysinfo/  
-│  
-├── src/  
-│   ├── main.py  
-│   └── sysinfo.py  
-│  
-├── README.md  
-├── pyproject.toml  
-├── .python-version  
-└── .gitignore  
+---
+
+## Requirements
+
+* Python >= 3.11
+
+---
+
+## Project Structure
+
+```text
+sysinfo/
+│
+├── src/
+│   ├── main.py
+│   └── sysinfo.py
+│
+├── README.md
+├── pyproject.toml
+├── .python-version
+└── .gitignore
 ```
-Используемые технологии:  
-```bash
-Python 3  
-psutil  
-socket  
-platform  
-Git
-```
-Автор: Sergej Nazarov
+
+---
+
+## Technologies Used
+
+* Python 3
+* psutil
+* socket
+* platform
+* Git
+
+---
+
+## Author
+
+Sergej Nazarov
