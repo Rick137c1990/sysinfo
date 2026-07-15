@@ -1,0 +1,13 @@
+[project]
+name = "sysinfo"
+version = "0.1.0"
+description = "Simple CLI utility for collecting system information."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Sergej Nazarov" }
+]
+
+dependencies = [
+    "psutil>=7.0.0"
+]
